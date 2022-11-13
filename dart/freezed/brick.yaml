@@ -24,3 +24,7 @@ vars:
   name:
     type: string
     description: File name
+  json:
+    type: boolean
+    description: Add fromJson
+    default: false
