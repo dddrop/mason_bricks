@@ -1,3 +1,5 @@
 bricks:
   layout:
     path: go/layout
+  freezed:
+    path: dart/freezed
