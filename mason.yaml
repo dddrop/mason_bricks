@@ -3,3 +3,5 @@ bricks:
     path: go/layout
   freezed:
     path: dart/freezed
+  rptmp:
+    path: dart/rptmp
