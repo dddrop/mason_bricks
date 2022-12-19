@@ -5,3 +5,5 @@ bricks:
     path: dart/freezed
   rptmp:
     path: dart/rptmp
+  grtmp:
+    path: dart/grtmp
