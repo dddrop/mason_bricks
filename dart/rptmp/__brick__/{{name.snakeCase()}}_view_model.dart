@@ -1,14 +1,9 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part '{{name.snakeCase()}}_view_model.freezed.dart';
 
-// MARK: - Provider
-final AutoDisposeStateNotifierProvider<{{name.pascalCase()}}ViewModel, {{name.pascalCase()}}State> {{name.camelCase()}}ViewModelProvider = StateNotifierProvider.autoDispose<{{name.pascalCase()}}ViewModel, {{name.pascalCase()}}State>(
-  (StateNotifierProviderRef<{{name.pascalCase()}}ViewModel, {{name.pascalCase()}}State> ref) => {{name.pascalCase()}}ViewModel(
-    const {{name.pascalCase()}}State(),
-  ),
-);
+part '{{name.snakeCase()}}_view_model.g.dart';
 
 // MARK: - State
 @freezed
@@ -17,6 +12,9 @@ class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
 }
 
 // MARK: - ViewModel
-class {{name.pascalCase()}}ViewModel extends StateNotifier<{{name.pascalCase()}}State> {
-  {{name.pascalCase()}}ViewModel(super.state);
+@riverpod
+class {{name.pascalCase()}}ViewModel extends _${{name.pascalCase()}}ViewModel {
+  
+  @override
+  {{name.pascalCase()}}State build() => const {{name.pascalCase()}}State();
 }
