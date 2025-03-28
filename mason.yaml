@@ -7,3 +7,7 @@ bricks:
     path: dart/rptmp
   grtmp:
     path: dart/grtmp
+  rs-common:
+    path: rust/common
+  rs-domain:
+    path: rust/domain
